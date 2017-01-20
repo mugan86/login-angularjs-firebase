@@ -8,12 +8,14 @@
  * Controller of the loginFirebaseApp
  */
 angular.module('loginFirebaseApp')
-  .controller('MainCtrl', function ($scope, $location) {
+  .controller('MainCtrl', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    $scope.userdisplay = "Guest";
 	var provider = new firebase.auth.GoogleAuthProvider();
 	provider.addScope('https://www.googleapis.com/auth/plus.login');
 
@@ -29,6 +31,7 @@ angular.module('loginFirebaseApp')
 		console.log('Email: ' + user.email);
 		console.log('ID: ' + user.id);
 		$scope.showLogOutButton = true;
+		$scope.userdisplay = user.name;
 	}
 	else
 	{
@@ -54,9 +57,9 @@ angular.module('loginFirebaseApp')
 
 			window.localStorage.setItem('user_data', angular.toJson(user_data));
 
-		  	$scope.showLogOutButton = true;
-			$scope.showLoginButton = false;
-			$location.path();
+			$scope.userdisplay = user.displayName;
+
+			window.location.reload(true);
 		  // ...
 		}).catch(function(error) {
 		  // Handle Errors here.
@@ -78,7 +81,8 @@ angular.module('loginFirebaseApp')
   			window.localStorage.removeItem('user_data');
   			$scope.showLoginButton = true;
   			$scope.showLogOutButton = false;
-  			$location.path();
+  			window.location.reload(true);
+  			$scope.userdisplay = "Guest";
 		}, function(error) {
 		  // An error happened.
 		  console.log('(ERROR) Close session correctly');
