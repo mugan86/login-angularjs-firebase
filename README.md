@@ -45,7 +45,7 @@ Google's project to add steps to log in, send notifications (Android or iOS) (or
 
 https://console.firebase.google.com/?pli=1
 
-![](https://raw.githubusercontent.com/mugan86/login-firebase/master/images/select_project.png)
+![](https://raw.githubusercontent.com/mugan86/login-angularjs-firebase/master/images/select_project.png)
 
 Select the existing project (if you have created, otherwise we will have to create a) and "Add firebase" We take the chance.
 
@@ -57,15 +57,15 @@ https://firebase.google.com/pricing/
 
 We are part of a project on the "Add Application" We selected.
 
-![](https://raw.githubusercontent.com/mugan86/login-firebase/master/images/create_ap.png)
+![](https://raw.githubusercontent.com/mugan86/login-angularjs-firebase/master/images/create_ap.png)
 
 "Añadir Firebase a tu aplicación web" aukera hartuko dugu.
 
-![](https://raw.githubusercontent.com/mugan86/login-firebase/master/images/app_type.png)
+![](https://raw.githubusercontent.com/mugan86/login-angularjs-firebase/master/images/app_type.png)
 
 Should stick to the script configuration will allow you to:
 
-![](https://raw.githubusercontent.com/mugan86/login-firebase/master/images/script.png)
+![](https://raw.githubusercontent.com/mugan86/login-angularjs-firebase/master/images/script.png)
 
 Considering this, we can get to the next by following the links adapted to our needs. In my case "login" I performed a simple.
 
