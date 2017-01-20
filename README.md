@@ -1,4 +1,4 @@
-# login-firebase
+# Firebase Login Example Info
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
@@ -35,7 +35,7 @@ Running `grunt test` will run the unit tests with karma.
 * git add .
 * git commit -m ".gitignore is now working"
 
-# Firebase Login Example Info
+
 
 ![](https://firebase.google.com/_static/3260bec2e7/images/firebase/lockup.png)
 
@@ -59,7 +59,7 @@ We are part of a project on the "Add Application" We selected.
 
 ![](https://raw.githubusercontent.com/mugan86/login-angularjs-firebase/master/images/create_ap.png)
 
-"Añadir Firebase a tu aplicación web" aukera hartuko dugu.
+We take "Add Firebase to your web application" option.
 
 ![](https://raw.githubusercontent.com/mugan86/login-angularjs-firebase/master/images/app_type.png)
 
